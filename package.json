@@ -1,0 +1,43 @@
+{
+  "name": "ttn-node-mongo",
+  "version": "1.0.0",
+  "description": "Simple Express and MongoDB server for HTTP integration with TTN",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js --exec babel-node",
+    "build": "babel server.js -d dist",
+    "serve": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimiflynn/ttn-node-mongo.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "mongoose",
+    "ttn"
+  ],
+  "author": "Mimi Flynn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mimiflynn/ttn-node-mongo/issues"
+  },
+  "homepage": "https://github.com/mimiflynn/ttn-node-mongo#readme",
+  "dependencies": {
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/node": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.5",
+    "mongoose": "^5.0.12",
+    "morgan": "^1.9.0",
+    "restful-mongoose": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}
