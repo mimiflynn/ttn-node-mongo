@@ -1,6 +1,15 @@
 # ttn-node-mongo
 Simple Express and MongoDB server for HTTP integration with TTN
 
+## Quick Start Dev Server
+
+If you have everything already installed:
+```
+npm install
+npm run start
+```
+
+
 ## Dependencies
 
 - NodeJS
@@ -29,3 +38,12 @@ sudo systemctl start mongod
 sudo systemctl status mongod
 ```
 
+
+## Build and Deploy
+
+To run the server on a more permanent server:
+
+```
+npm run build
+npm run serve
+```
